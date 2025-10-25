@@ -4,3 +4,5 @@
 ## [2025-10-26]
 ### Added
 - 项目首次提交。
+### Changed
+- 更新 RocketRules 规则中的 URL 链接 
