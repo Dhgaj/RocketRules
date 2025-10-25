@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Source
+Source/
+
+# Trash
+.Trash/
+
+# Test
+test*
