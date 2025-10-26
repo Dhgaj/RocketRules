@@ -6,3 +6,6 @@
 - 项目首次提交。
 ### Changed
 - 更新 RocketRules 规则中的 URL 链接 
+- 更新 RocketRules 规则中的 更新链接
+- 更新 .gitignore 文件
+- 更新 Modules/README.md 文件

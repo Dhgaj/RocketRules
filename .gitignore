@@ -13,6 +13,9 @@
 # Source
 Source/
 
+# Backup
+Backup/
+
 # Trash
 .Trash/
 
