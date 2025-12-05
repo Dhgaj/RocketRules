@@ -4,7 +4,7 @@
 FILES=("direct.list" "proxy.list" "reject.list")
 
 # 切换到 Rules 目录
-cd "$(dirname "$0")" || exit
+cd "$(dirname "$0")/../Rules" || exit
 
 for FILE_PATH in "${FILES[@]}"; do
     # 检查文件是否存在

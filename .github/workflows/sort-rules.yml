@@ -1,0 +1,33 @@
+name: Auto Sort Rules
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Rules/**'
+
+jobs:
+  sort-and-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Sort rules
+        run: |
+          sh ./Script/sort_rules.sh
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "style: auto sort rules"
+          branch: "auto-sort-rules"
+          delete-branch: true
+          title: "Auto Sort Rules"
+          body: |
+            This is an auto-generated PR to sort the rules files.
+        
+      - name: Done
+        run: echo "Workflow finished."
